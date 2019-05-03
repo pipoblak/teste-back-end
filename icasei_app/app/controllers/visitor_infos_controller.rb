@@ -1,0 +1,2 @@
+class VisitorInfosController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class VisitorInfo < ApplicationRecord
+end
