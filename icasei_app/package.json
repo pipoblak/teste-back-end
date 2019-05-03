@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "^4.0.2",
+    "js-cookie": "^2.2.0",
     "query-string": "^6.5.0"
   },
   "devDependencies": {

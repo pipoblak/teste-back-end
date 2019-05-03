@@ -16,3 +16,4 @@
 // const imagePath = (name) => images(name, true)
 
 window.queryString = require("query-string")
+window.Cookies = require("js-cookie")

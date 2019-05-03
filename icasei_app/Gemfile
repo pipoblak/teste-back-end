@@ -38,8 +38,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # Tests in Rails
 gem 'rspec-rails'
-#Wrapper for JS Cookie Library
-gem 'js_cookie_rails'
 
 #Webpacker Javascript PreProcessor
 gem 'webpacker', '~> 4.x'
