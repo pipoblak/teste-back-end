@@ -12,9 +12,14 @@
     },
     track: function(){
       if(Cookies!=undefined){
-        if (!Cookies.get("GUID"))
+        let guid = Cookies.get("GUID")
+        if (!guid)
           Cookies.set("GUID",this.visitorT.generateGUID());
-        
+        let info = { visitor_info:{
+          guid: guid,
+          path: window.location.pathname,
+          accessed_at: new Date().toISOString()
+        }}
         return true;
       }else{
         alert("Need JS-Cookie Library to RUN");
