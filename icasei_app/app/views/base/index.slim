@@ -1,0 +1,18 @@
+= content_for :page_title do 
+  |Visitor Info
+= content_for :page_subtitle do 
+  |Informations from Visitors
+.col-10.d-flex.flex-grow-1
+  table.table
+    thead
+      tr
+        - resource_class::ATTRIBUTES_FOR_PRESENTATION_TABLE.each do |attribute|
+          - attribute = attribute + "_id" if resource_class.attribute_names.include?("#{attribute}_id")
+          th scope="col" 
+           | #{attribute!=:id ? resource_class.human_attribute_name(attribute) : "#"}
+    tbody
+      - collection.each do |resource|
+        tr
+          - resource_class::ATTRIBUTES_FOR_PRESENTATION_TABLE.each_with_index do |attribute, i|
+            td
+              = resource.public_send(attribute)

@@ -1,7 +1,7 @@
 class VisitorInfosController < BaseController
   skip_before_action :verify_authenticity_token
-  layout "dashboard"
   def index
+    @visitor_infos = VisitorInfo.all
   end 
   def create
     Thread.new {

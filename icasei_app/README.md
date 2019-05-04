@@ -14,3 +14,10 @@
 
 * Start server 
   > rails s
+
+* Tests available with RSPEC, RUN
+  > rspec spec/\<DesiredTestTarget\>/\<TestName\>
+
+  - availables TestTargets
+    - models
+    - requests
