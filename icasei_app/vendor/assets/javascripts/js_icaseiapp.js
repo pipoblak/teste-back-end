@@ -20,7 +20,9 @@
           path: window.location.pathname,
           accessed_at: new Date().toISOString()
         }}
-        console.log(info)
+        axios.post('/visitor_infos', info, { headers: { 'X-Requested-With': 'XMLHttpRequest' }} ).then(function (response) {
+          console.log(response);
+        })
         return true;
       }else{
         alert("Need JS-Cookie Library to RUN");

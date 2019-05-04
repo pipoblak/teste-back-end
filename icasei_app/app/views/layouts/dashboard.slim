@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title IcaseiApp
+    = csrf_meta_tags 
+    = csp_meta_tag 
+    
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
+    = javascript_pack_tag 'application' 
+    = stylesheet_pack_tag 'application' 
+  body#app
+    .jumbotron
+      h1.display-4 Visitor Infos
+      p.lead Infos from visitors on Website
+      hr.my-4/
+      .row
+        .col-2
+        .col-10
+          .row.justify-content-center
+            = yield 
+
+
+
