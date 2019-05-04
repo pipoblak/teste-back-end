@@ -20,11 +20,21 @@
           path: window.location.pathname,
           accessed_at: new Date().toISOString()
         }}
+        console.log(info)
         return true;
       }else{
         alert("Need JS-Cookie Library to RUN");
         return false;        
       }
     }.bind(this)
+  }
+  if(Turbolinks != undefined){
+    document.addEventListener("turbolinks:load", function (event) {
+      visitorT.track()
+    })
+  }else{
+    document.addEventListener("page:load", function(event){
+      visitorT.track()
+    })
   }
 }).call(this)

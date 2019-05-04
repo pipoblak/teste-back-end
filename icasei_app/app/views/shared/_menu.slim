@@ -1,7 +1,7 @@
 .list-group
-  = link_to(root_path, class:"list-group-item list-group-item-action #{'active' if action_name == 'index'}") do 
+  = link_to(root_path, class:"list-group-item list-group-item-action #{'active' if controller_name=="app" && action_name == 'index'}") do 
     |Home
-  = link_to(about_path, class:"list-group-item list-group-item-action #{'active' if action_name == 'about'}") do 
+  = link_to(about_path, class:"list-group-item list-group-item-action #{'active' if controller_name=="app" &&  action_name == 'about'}") do 
     |About
-  = link_to(contact_path, class:"list-group-item list-group-item-action #{'active' if action_name == 'contact'}") do 
+  = link_to(contact_path, class:"list-group-item list-group-item-action #{'active' if controller_name=="app" &&  action_name == 'contact'}") do 
     |Contact
