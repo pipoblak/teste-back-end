@@ -17,3 +17,4 @@
 
 window.queryString = require("query-string")
 window.Cookies = require("js-cookie")
+window.axios = require("axios")
