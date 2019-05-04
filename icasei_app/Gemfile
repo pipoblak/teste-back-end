@@ -45,11 +45,17 @@ gem 'webpacker', '~> 4.x'
 #Inherit Restful Actions
 gem 'inherited_resources'
 
+#Jquery Javascript Wrapper
+gem 'jquery-rails'
+
 # Bootstrap JS and SCSS Wrapper
 gem 'bootstrap', '~> 4.3.1'
 
 # Form generator with Bootstrap 
 gem "bootstrap_form", ">= 4.2.0"
+
+# HTML made simple
+gem "slim-rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
