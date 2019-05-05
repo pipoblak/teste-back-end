@@ -57,6 +57,12 @@ gem "bootstrap_form", ">= 4.2.0"
 # HTML made simple
 gem "slim-rails"
 
+#Gem for ActiveRecord Pagination
+gem 'kaminari'
+
+#Gem for customize Kaminari to Bootstrap4
+gem 'bootstrap4-kaminari-views'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

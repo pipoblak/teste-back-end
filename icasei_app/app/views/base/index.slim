@@ -16,3 +16,7 @@
           - resource_class::ATTRIBUTES_FOR_PRESENTATION_TABLE.each_with_index do |attribute, i|
             td
               = resource.public_send(attribute)
+
+.col-12
+  .row.justify-content-center
+    = paginate collection, theme: 'twitter-bootstrap-4'
