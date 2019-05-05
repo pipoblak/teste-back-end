@@ -4,4 +4,9 @@
   |Contact page of website
 
 p
-  |Contact content
+  = bootstrap_form_for(UserContact.new) do |f| 
+    = f.email_field :email 
+    = f.text_field :name 
+
+    .row.justify-content-center
+      = f.submit "Request Contact"
