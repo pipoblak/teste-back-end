@@ -15,6 +15,5 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-window.queryString = require("query-string")
 window.Cookies = require("js-cookie")
 window.axios = require("axios")
