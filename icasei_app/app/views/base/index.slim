@@ -1,7 +1,8 @@
 = content_for :page_title do 
-  |Visitor Info
+  = resource_class
 = content_for :page_subtitle do 
-  |Informations from Visitors
+  - if defined? resource_class::SUBTITLE
+    =resource_class::SUBTITLE
 .col-10.d-flex.flex-grow-1
   table.table
     thead
