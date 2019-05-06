@@ -3,9 +3,12 @@
 * Requirements
   - Ruby 2.5.1
   - Rails 5.2.3
+  - Yarn
 
 * Run Following Commands:
   > bundle install
+
+  > yarn install
   
   > rake db:create
   
@@ -21,3 +24,4 @@
   - availables TestTargets
     - models
     - requests
+    - routing
