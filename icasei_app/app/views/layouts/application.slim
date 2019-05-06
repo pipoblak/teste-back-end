@@ -12,6 +12,9 @@ html
     = javascript_pack_tag 'application' 
     = stylesheet_pack_tag 'application' 
   body#app
+    - flash.each do |key, value|
+      div class="#{flash_class(key)}"
+        = value
     .jumbotron
       h1.display-4 #{yield :page_title}
       p.lead #{yield :page_subtitle}
